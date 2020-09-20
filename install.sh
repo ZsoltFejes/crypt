@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output /sbin/crypt
+curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output /usr/sbin/crypt
 chmod +x /usr/sbin/crypt
 
 echo

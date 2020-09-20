@@ -7,7 +7,7 @@ PATH=/usr/local/bin/crypt
 ################################################################################
 function Help () {
         # Display Help
-        echo "The CRYp Project Installation Script"
+        echo "The Crypt Project Installation Script"
         echo
         echo "Syntax: bash <(curl -s https://raw.githubusercontent.com/ZsoltFejes/crypt/master/install.sh) [-l|--local]"
         echo "options:"

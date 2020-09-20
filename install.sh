@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH=/usr/local/bin/crypt
+PATH_TO=/usr/local/bin/crypt
 
 ################################################################################
 # Help                                                                         #
@@ -25,7 +25,7 @@ do
         exit
         ;;
         -l|--local)
-        PATH=~bin/crypt
+        PATH_TO=~bin/crypt
         shift # Remove -s|--skip from processing
         ;;
         *)
@@ -35,8 +35,8 @@ do
     esac
 done
 
-curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output $PATH
-chmod +x PATH
+curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output $PATH_TO
+chmod +x $PATH_TO
 
 echo
 if ! command -v crypt &> /dev/null

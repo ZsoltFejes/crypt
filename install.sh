@@ -1,7 +1,8 @@
+
 #!/bin/bash
 
 PATH_TO=/usr/local/bin/crypt
-
+USER=$(whoami)
 ################################################################################
 # Help                                                                         #
 ################################################################################
@@ -11,7 +12,7 @@ function Help () {
         echo
         echo "Syntax: bash <(curl -s https://raw.githubusercontent.com/ZsoltFejes/crypt/master/install.sh) [-l|--local]"
         echo "options:"
-        echo "-l|--local      The script will only be installed for the user that run it"
+        echo "-l|--local      The script will only be installed for only the user that run it"
         echo
 }
 
@@ -25,7 +26,7 @@ do
         exit
         ;;
         -l|--local)
-        PATH_TO=~bin/crypt
+        PATH_TO=$(eval echo ~"$USER")/.local/bin/crypt
         shift # Remove -s|--skip from processing
         ;;
         *)

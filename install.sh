@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output /sbin/crypt
-chmod +x /sbin/crypt
+chmod +x /usr/sbin/crypt
 
 echo
 if ! command -v crypt &> /dev/null

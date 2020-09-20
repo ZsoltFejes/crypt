@@ -1,4 +1,5 @@
 # The Crypt Project
+'''
 usage: crypt [-h] -s [SOURCE] [-v] [-e] [-d] [-r] [-p [PASSWORD]]
              [-o [OUTPUT]]
 
@@ -17,3 +18,4 @@ optional arguments:
   -o [OUTPUT], --output [OUTPUT]
                         Output file, otherwise the file will be called
                         [source].aes
+'''

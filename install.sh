@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output /usr/local/sbin/crypt
-chmod +x /usr/local/sbin/crypt
+curl https://raw.githubusercontent.com/ZsoltFejes/crypt/master/dist/crypt --output /usr/local/bin/crypt
+chmod +x /usr/local/bin/crypt
 
 echo
 if ! command -v crypt &> /dev/null

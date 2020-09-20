@@ -7,16 +7,11 @@ PATH=/usr/local/bin/crypt
 ################################################################################
 function Help () {
         # Display Help
-        echo "Rareloop Laravel environment deployment script."
+        echo "The CRYp Project Installation Script"
         echo
-        echo "Syntax: ./RareloopLaravelDeploy.sh [OPTION]"
+        echo "Syntax: bash <(curl -s https://raw.githubusercontent.com/ZsoltFejes/crypt/master/install.sh) [-l|--local]"
         echo "options:"
-        echo "-s|--skip       The specified step will not be carried out"
-        echo "--stage         Only the specified stage will be run"
-        echo "-r|--restart    In Case you want to restart the full deployment"
-        echo "-d|--deploy     If you only want to deploy a new site on"
-        echo "                an already provisioned server."
-        echo "--remove-domain Removes domain from the server including the domain user"
+        echo "-l|--local      The script will only be installed for the user that run it"
         echo
 }
 

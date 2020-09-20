@@ -18,9 +18,3 @@ Run the following command in cli:
 `bash <(curl -s https://raw.githubusercontent.com/ZsoltFejes/crypt/master/install.sh)`
 EOF
 echo "New README File has been created"
-
-
-
-
-
-

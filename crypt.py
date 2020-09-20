@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from os import remove as rm
 import argparse
-import subprocess
 import pyAesCrypt
 import getpass
 from _version import __version__
@@ -33,7 +32,6 @@ args = parser.parse_args()
 
 #Parsing source from arguments
 source = args.source
-
 
 if args.encrypt == True and args.decrypt == True:
     print("Script can't Encrypt and Decript at the same time.")

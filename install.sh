@@ -25,7 +25,7 @@ do
         exit
         ;;
         -l|--local)
-        PATH=~/bin/crypt
+        PATH=~bin/crypt
         shift # Remove -s|--skip from processing
         ;;
         *)
